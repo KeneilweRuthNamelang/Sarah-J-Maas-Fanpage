@@ -27,46 +27,51 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
     />
     <!-- Custom CSS -->
-    <style>
-      body {
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .headings {
-      }
-      li {list-style: none;}
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="wrapper">
+      <!--Nav links-->
       <header class="navigation">
-        <!--Nav links-->
-        <nav class="d-flex">
-          <a href="/" title="Homepage">
-            <img
-              src="SJM logo.jpeg"
-              class="logo d-none d-md-block"
-              alt=""
-              style="max-width: 10%"
-            />
-          </a>
-          <ul class="d-flex justify-content-evenly">
-            <li>
-              <a href="#" title=""> About</a>
-            </li>
-            <li>
-              <a href="#" title=""> Work</a>
-            </li>
-            <li>
-              <a href="#" title=""> Contact</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img
+                src="SJM logo.jpeg"
+                alt="Sarah J Maas Fan Page"
+                style="max-width: 20%"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#books">Books</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
+
       <main>
         <!-- About Sarah -->
-        <section class="about">
+        <section id="about">
           <h1>ABOUT THE AUTHOR</h1>
           <img
             src="sarahjmaas profile.jpg"
@@ -86,41 +91,119 @@
           </p>
         </section>
         <!-- Books -->
-        <section class="books">
+        <section id="books">
           <div class="container">
             <div class="row">
               <p class="text-center">Throne of Glass</p>
               <div class="row">
-                <div class="col-3">The Assassin's Blade</div>
-                <div class="col-3">Throne of Glass</div>
-                <div class="col-3">Crown of Midnight</div>
-                <div class="col-3">Heir of Fire</div>
+                <div class="col-3">
+                  The Assassin's Blade
+                  <img
+                    src="the assassin's blade.jpg"
+                    alt=""
+                    style="max-width: 50%"
+                  />
+                </div>
+                <div class="col-3">
+                  Throne of Glass
+                  <img
+                    src="throne of glass.jpg"
+                    alt=""
+                    style="max-width: 50%"
+                  />
+                </div>
+                <div class="col-3">
+                  Crown of Midnight
+                  <img
+                    src="crown of midnight.jpg"
+                    alt=""
+                    style="max-width: 50%"
+                  />
+                </div>
+                <div class="col-3">
+                  Heir of Fire
+                  <img src="heir of fire.jpg" alt="" style="max-width: 50%" />
+                </div>
               </div>
+
               <div class="row">
-                <div class="col">Queen of Shadows</div>
-                <div class="col">Empire of Storms</div>
-                <div class="col">Tower of Dawn</div>
-                <div class="col">Kingdom of Ash</div>
+                <div class="col-3">
+                  Queen of Shadows
+                  <img
+                    src="queen of shadows.jpg"
+                    alt=""
+                    style="max-width: 50%"
+                  />
+                </div>
+                <div class="col-3">
+                  Empire of Storms
+                  <img
+                    src="empire of storms.jpg"
+                    alt=""
+                    style="max-width: 50%"
+                  />
+                </div>
+                <div class="col-3">
+                  Tower of Dawn
+                  <img src="tower of dawn.jpg" alt="" style="max-width: 50%" />
+                </div>
+                <div class="col-3">
+                  Kingdom of Ash
+                  <img src="kingdom of ash.jpg" alt="" style="max-width: 50%" />
+                </div>
               </div>
             </div>
 
             <div class="row">
               <p class="text-center mt-5">A Court of Thorns and Roses</p>
               <div class="row">
-                <div class="col-2">A Court of Thorns and Roses</div>
-                <div class="col-2">A Court of Mist and Fury</div>
-                <div class="col-2">A Court of Wings and Ruin</div>
-                <div class="col-2">A Court of Frost and Starlight</div>
-                <div class="col-2">A Court of Silver Flames</div>
+                <div class="col-1"></div>
+
+                <div class="col-2">
+                  A Court of Thorns and Roses
+                  <br />
+                  <img src="ACOTAR.jpg" alt="" style="max-width: 50%" />
+                </div>
+                <div class="col-2">
+                  A Court of Mist and Fury
+                  <br />
+                  <img src="ACOMAF.jpg" alt="" style="max-width: 50%" />
+                </div>
+                <div class="col-2">
+                  A Court of Wings and Ruin
+                  <br />
+                  <img src="ACOWAR.jpg" alt="" style="max-width: 50%" />
+                </div>
+                <div class="col-2">
+                  A Court of Frost and Starlight
+                  <br />
+                  <img src="ACOFAS.jpg" alt="" style="max-width: 50%" />
+                </div>
+                <div class="col-2">
+                  A Court of Silver Flames
+                  <br />
+                  <br />
+                  <img src="ACOSF.jpg" alt="" style="max-width: 50%" />
+                </div>
+                <div class="col-1"></div>
               </div>
             </div>
 
             <div class="row">
               <p class="text-center mt-5">A Court of Thorns and Roses</p>
               <div class="row">
-                <div class="col">House of Earth and Blood</div>
-                <div class="col">House of Sky and Breath</div>
-                <div class="col">House of Flame and Shadow</div>
+                <div class="col">
+                  House of Earth and Blood
+                  <img src="HOEAB.jpg" alt="" style="max-width: 50%" />
+                </div>
+                <div class="col">
+                  House of Sky and Breath
+                  <img src="HOSAB.jpg" alt="" style="max-width: 50%" />
+                </div>
+                <div class="col">
+                  House of Flame and Shadow
+                  <img src="HOFAS.jpg" alt="" style="max-width: 50%" />
+                </div>
               </div>
             </div>
           </div>
@@ -129,7 +212,7 @@
       <footer>
         <!--Contact -->
         <section>
-          <div class="contact">
+          <div id="contact">
             <div>
               Publicity:
               <br />
